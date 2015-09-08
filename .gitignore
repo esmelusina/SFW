@@ -20,7 +20,6 @@
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
@@ -77,6 +76,7 @@ $RECYCLE.BIN/
 
 # Visual Studio Junk
 # ==========================
-.vs
+*.vs
+*.sdf
 Debug
 Release
