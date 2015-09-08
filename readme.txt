@@ -1,4 +1,6 @@
-Copy the sfwdraw.h and SFW.lib into your project directory.
+Copy the sfwdraw.h and SFW.lib into your project directory. Add sfwdraw.h as an include and set your project to link to sfw.lib, done!
+
+The source and example project in this repo are setup to use debug x86 configuration only.
 
 Right now, everything is setup using Visual Studio 2015. The .libs shouldn't work in other versions.
 A vs2015 glfw3 binary can be found in the source folder if you'd like to use it for some other project.
