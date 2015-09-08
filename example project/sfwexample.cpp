@@ -16,10 +16,13 @@
 
 #include "sfwdraw.h"
 
+const int SCREEN_WIDTH = 800;
+const int SCREEN_HEIGHT = 600;
+
 void main()
 {
 	//first we need to initialize our graphics context- or window.
-	sfw::initContext(800, 600, "Dinosaurs!");
+	sfw::initContext(SCREEN_WIDTH, SCREEN_HEIGHT, "Dinosaurs!");
 
 	
 	float xpos = 300, ypos = 400; // position
@@ -49,6 +52,12 @@ void main()
 		yvel += yacc * sfw::getDeltaTime();
 
 		sfw::drawCircle(xpos, ypos, 30);
+
+		sfw::drawLine(5, 5, 5, SCREEN_HEIGHT-5);
+		sfw::drawLine(5, 5, SCREEN_WIDTH-5, 5);
+		
+		sfw::drawLine(SCREEN_WIDTH-5, SCREEN_HEIGHT-5, 5, SCREEN_HEIGHT-5);
+		sfw::drawLine(SCREEN_WIDTH - 5, SCREEN_HEIGHT - 5, SCREEN_WIDTH- 5, 5);
 	}
 
 	//finally, we need to properly shut stuff down.
